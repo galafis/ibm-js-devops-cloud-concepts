@@ -26,4 +26,4 @@ Este repositório reflete os conceitos ensinados nos módulos focados em DevOps,
 *   `LICENSE`: Licença MIT.
 *   `.gitignore`: Arquivo gitignore padrão para Node (gerado automaticamente).
 
-**Observação:** O conteúdo neste repositório foca na demonstração conceitual através do `README.md` e de um `Dockerfile` simples, conforme a solicitação de economia de recursos. Não inclui pipelines de CI/CD complexos ou configurações de Kubernetes detalhadas.
+**Observação:** O conteúdo neste repositório foca na demonstração conceitual através do `README.md` e de um `Dockerfile` simples,  não inclui pipelines de CI/CD complexos ou configurações de Kubernetes detalhadas.
