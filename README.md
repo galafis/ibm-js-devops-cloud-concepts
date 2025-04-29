@@ -1,6 +1,6 @@
 # Repositório: Conceitos de DevOps e Cloud (IBM Full-Stack JS)
 
-Este repositório demonstra a compreensão dos conceitos de **DevOps** e **Cloud-Native** adquiridos no programa **IBM Full-Stack JavaScript Developer Professional Certificate**.
+Este repositório, feito por mim, demonstra a compreensão dos conceitos de **DevOps** e **Cloud-Native** adquiridos no programa **IBM Full-Stack JavaScript Developer Professional Certificate**.
 
 ## Objetivo
 
