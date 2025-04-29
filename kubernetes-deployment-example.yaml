@@ -1,0 +1,36 @@
+# Exemplo básico de um Deployment Kubernetes para uma aplicação Node.js
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-app-deployment # Nome do Deployment
+spec:
+  replicas: 2 # Número desejado de Pods
+  selector:
+    matchLabels:
+      app: nodejs-app # Rótulo para selecionar os Pods gerenciados
+  template:
+    metadata:
+      labels:
+        app: nodejs-app # Rótulo aplicado aos Pods criados
+    spec:
+      containers:
+      - name: nodejs-container # Nome do container dentro do Pod
+        image: seu-usuario/sua-imagem-node:latest # Substitua pela sua imagem Docker
+        ports:
+        - containerPort: 3000 # Porta que a aplicação expõe dentro do container
+
+# --- Exemplo básico de um Service Kubernetes para expor o Deployment ---
+
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nodejs-app-service # Nome do Service
+# spec:
+#   selector:
+#     app: nodejs-app # Seleciona os Pods com este rótulo
+#   ports:
+#     - protocol: TCP
+#       port: 80 # Porta exposta pelo Service
+#       targetPort: 3000 # Porta no Pod para onde o tráfego será direcionado
+#   type: LoadBalancer # Ou ClusterIP, NodePort dependendo da necessidade
